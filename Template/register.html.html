@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DBS Airlines</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h2>LOGIN</h2>
+                        <form >
+                            <input type="email" class="input-box" placeholder="Your Email-Id" required>
+                            <input type="password" class="input-box" placeholder="Your Password" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox" ><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+                        <a href="">Forgot Password</a>
+
+                    </div>
+                    <div class="card-back">
+                        <h2>REGISTER</h2>
+                        <form >
+                            <input type="text" class="input-box" placeholder="Your Username" required>
+                            <input type="email" class="input-box" placeholder="Your Email-Id" required>
+                            <input type="password" class="input-box" placeholder="Your Password" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox" ><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">Already have an account?</button>
+                        <a href="">Forgot Password</a>
+
+
+                    </div>
+
+                </div>    
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contain">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Contact Us</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Instagram</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Youtube</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
+                <hr>
+                <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2022 -
+                    DBS Airlines</p>
+            </div>
+        <script>
+            var card=document.getElementById("card");
+            function openRegister(){
+                card.style.transform= "rotateY(-180deg)";
+            }
+            function openLogin(){
+                card.style.transform= "rotateY(0deg)";
+            }
+        </script>
+    </body>
+    
+
+
+</html>
